@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/{{style}}">  <!-- El estilo tambien puede ser una variable porque va a depender de el estilo que le queramos pasar a dicha paguina -->
+</head>
+<body>
+
+    {{>navbar}}  <!-- De esta forma llamamos a un partial, con el singo de > (mayor) -->
+
+    {{{body}}}   <!-- De esta forma llamamos al body que nos pasaron por desde el render -->
+
+</body>
+</html>
